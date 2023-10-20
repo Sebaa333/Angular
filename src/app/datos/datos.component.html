@@ -1,0 +1,29 @@
+<table>
+    <tbody>
+      <tr *ngFor="let item of items; let i = index">
+        <th>Billed to</th>
+        <td><input [(ngModel)]="items[i].billedTo" name="billedTo{{i}}" /></td>
+      </tr>
+      <tr *ngFor="let item of items; let i = index">
+        <th>Pay to</th>
+        <td><input [(ngModel)]="items[i].payTo" name="payTo{{i}}" /></td>
+      </tr>
+      <tr *ngFor="let item of items; let i = index">
+        <th>Bank Account</th>
+        <td><input [(ngModel)]="items[i].bankAccount" name="bankAccount{{i}}" /></td>
+      </tr>
+      <tr *ngFor="let item of items; let i = index">
+        <th>Name</th>
+        <td><input [(ngModel)]="items[i].name" name="name{{i}}" /></td>
+      </tr>
+      <tr *ngFor="let item of items; let i = index">
+        <th>BSB</th>
+        <td><input [(ngModel)]="items[i].bsb" name="bsb{{i}}" /></td>
+      </tr>
+      <tr *ngFor="let item of items; let i = index">
+        <th>Account Number</th>
+        <td><input [(ngModel)]="items[i].accountNumber" name="accountNumber{{i}}" /></td>
+      </tr>
+    </tbody>
+  </table>
+  
