@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard.component';
-import { DatosComponent } from './pages/datos/datos.component';
 import { DatosModule } from './pages/datos/datos.module';
+import { TablaModule } from './pages/tabla/tabla.module';
 
 
 
@@ -13,6 +13,8 @@ import { DatosModule } from './pages/datos/datos.module';
   imports: [
     CommonModule,
     DatosModule,
+    TablaModule,
+    
   ],
   exports: [
     DashboardComponent,

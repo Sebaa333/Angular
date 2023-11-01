@@ -1,35 +1,49 @@
-<!-- <table>
-    <tbody>
-      <tr *ngFor="let item of items; let i = index">
-        <th>Billed to</th>
-        <td><input [(ngModel)]="items[i].billedTo" name="billedTo{{i}}" /></td>
-      </tr>
-      <tr *ngFor="let item of items; let i = index">
-        <th>Pay to</th>
-        <td><input [(ngModel)]="items[i].payTo" name="payTo{{i}}" /></td>
-      </tr>
-      <tr *ngFor="let item of items; let i = index">
-        <th>Bank Account</th>
-        <td><input [(ngModel)]="items[i].bankAccount" name="bankAccount{{i}}" /></td>
-      </tr>
-      <tr *ngFor="let item of items; let i = index">
-        <th>Name</th>
-        <td><input [(ngModel)]="items[i].name" name="name{{i}}" /></td>
-      </tr>
-      <tr *ngFor="let item of items; let i = index">
-        <th>BSB</th>
-        <td><input [(ngModel)]="items[i].bsb" name="bsb{{i}}" /></td>
-      </tr>
-      <tr *ngFor="let item of items; let i = index">
-        <th>Account Number</th>
-        <td><input [(ngModel)]="items[i].accountNumber" name="accountNumber{{i}}" /></td>
-      </tr>
-    </tbody>
-  </table> -->
+<div>
+  <mat-list>
+    Billed to
+    <mat-form-field>
+      <mat-label>Empresa</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <mat-divider></mat-divider>
+    Pay to
+    <mat-form-field>
+      <mat-label>Pay to</mat-label>
+      <mat-select>
+        <mat-option value="one">Efectivo</mat-option>
+        <mat-option value="two">Cheque</mat-option>
+        <mat-option value="two">Transferencia</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-divider></mat-divider>
+  Bank
+  <mat-form-field>
+    <mat-label>Bank</mat-label>
+    <mat-select>
+      <mat-option value="one">Galicia</mat-option>
+      <mat-option value="two">Superville</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-divider></mat-divider>
+  Name
+  <mat-form-field>
+  <mat-label>Name</mat-label>
+  <input matInput>
+</mat-form-field>
+<mat-divider></mat-divider>
+BSB 
+<mat-form-field>
+  <mat-label>BSB</mat-label>
+  <input matInput>
+</mat-form-field>
+<mat-divider></mat-divider>
+Account Number
+<mat-form-field>
+  <mat-label>Account Number</mat-label>
+  <input matInput type="number" >
+</mat-form-field>
+</mat-list>
+</div>
   
-  
-  <mat-card>
-    <mat-card-content>Simple card</mat-card-content>
-  </mat-card>
   
   

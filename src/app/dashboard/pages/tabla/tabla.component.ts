@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./tabla.component.scss']
 })
 export class TablaComponent {
-  items: any[] = [
-    { description: '', rate: '', hours: '', amount: '' },
-    // POedes agregar más objetos si necesitas más filas iniciales
-  ];
+  displayedColumns: string[] = ['description', 'rate', 'hours', 'amount'];
+  dataSource = this.displayedColumns
 }
